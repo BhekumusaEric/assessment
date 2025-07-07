@@ -179,8 +179,9 @@ def number_triangle(height: int) -> str:
     n = []
     line = []
     for i in range(1 , height + 1):
-        line = [str(i) for i in range(1 , i)]
+        line = [str(i) for i in range(1 , i + 1)]
         n.extend(line)
+        n.append("\n")
     return n
 
 print(number_triangle(3))
